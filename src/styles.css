@@ -1,0 +1,72 @@
+h1 {
+  color: #3c4245;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#temp {
+  color: #3c4245;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#metric {
+  color: #3c4245;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#date {
+  text-align: center;
+}
+
+#time {
+  text-align: center;
+  font-size: 25px;
+}
+
+.search {
+  border-radius: 10px;
+  border: 1px solid #d9dad7;
+  padding: 5px 20px 5px 10px;
+  margin-top: 10px;
+}
+
+span {
+  font-weight: bold;
+  color: #3c4245;
+}
+
+button {
+  margin-top: 5px;
+  display: inline;
+}
+.conditions {
+  color: #3a4750;
+  margin-top: 5px;
+}
+
+.days {
+  margin-top: 30px;
+  font-weight: bold;
+  color: #3c4245;
+}
+
+.emojis {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.weather-app {
+  background: linear-gradient(
+    109.6deg,
+    rgb(223, 234, 247) 11.2%,
+    rgb(244, 248, 252) 91.1%
+  );
+  border: 1px solid #d9dad7;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  max-width: 600px;
+  margin: auto;
+}
