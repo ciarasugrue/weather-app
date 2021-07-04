@@ -18,6 +18,10 @@ h1 {
   top: -30px;
 }
 
+#description {
+  text-transform: capitalize;
+}
+
 #date {
   text-align: center;
 }

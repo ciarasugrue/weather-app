@@ -17,9 +17,10 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1 id="city">Montpellier</h1>
-        <span id="temp">23</span>
+        <h1 id="city"></h1>
+        <span id="temp"></span>
         <span id="metric">°C | °F</span>
+        <div id="description"></div>
         <div id="time"></div>
         <div id="date"></div>
         <form id="search-form">
@@ -46,9 +47,9 @@
               alt="Precipitation"
             />
           </span>
-          4%
+          <span id="precipitation"></span>%
         </div>
-        <div class="conditions" id="wind">
+        <div class="conditions">
           <span>
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/011/426/original/iconfinder_5729377_weather_windy_climate_forecast_storm_icon_512px.png?1624477806"
@@ -56,7 +57,7 @@
               alt="Wind"
             />
           </span>
-          14km/hr
+          <span id="wind"></span>km/hr
         </div>
         <div class="days">
           <div class="row">
