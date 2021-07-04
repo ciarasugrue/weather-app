@@ -6,14 +6,16 @@ h1 {
 
 #temp {
   color: #3c4245;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
 }
 
 #metric {
   color: #3c4245;
-  font-size: 30px;
   font-weight: bold;
+  line-height: 5px;
+  position: relative;
+  top: -30px;
 }
 
 #date {
@@ -41,6 +43,7 @@ button {
   margin-top: 5px;
   display: inline;
 }
+
 .conditions {
   color: #3a4750;
   margin-top: 5px;
