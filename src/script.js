@@ -1,5 +1,15 @@
-function formatDate(date) {
-  let today = date.getDate();
+function newDateFormat(timestamp) {
+  let date = new Date(timestamp);
+
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
   let days = [
     "Sunday",
@@ -12,46 +22,8 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
 
-  let months = [
-    "Jan",
-    "Feb",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-  let month = months[date.getMonth()];
-
-  return `${day}, ${today} ${month}`;
+  return `${day} ${hours}:${minutes}`;
 }
-
-function formatTime(time) {
-  let hours = time.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-
-  let minutes = time.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
-  return `${hours}:${minutes}`;
-}
-
-let currentTime = new Date();
-
-let dateElement = document.querySelector("#date");
-dateElement.innerHTML = formatDate(currentTime);
-
-let timeElement = document.querySelector("#time");
-timeElement.innerHTML = formatTime(currentTime);
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -62,6 +34,9 @@ function showTemperature(response) {
     response.data.weather[0].description;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+  );
+  document.querySelector("#date").innerHTML = newDateFormat(
+    response.data.dt * 1000
   );
 }
 
