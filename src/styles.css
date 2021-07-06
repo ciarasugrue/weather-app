@@ -23,6 +23,9 @@ h1 {
 }
 
 .date {
+  text-align: center;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 #date {
