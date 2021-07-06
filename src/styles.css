@@ -18,6 +18,14 @@ h1 {
   top: -30px;
 }
 
+#celsius-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
+}
+
 #description {
   text-transform: capitalize;
 }
@@ -61,15 +69,18 @@ button {
   margin-top: 5px;
 }
 
-.days {
+.forecast {
   margin-top: 30px;
-  font-weight: bold;
+  text-align: center;
   color: #3c4245;
 }
 
-.emojis {
-  font-size: 25px;
-  font-weight: 100;
+.forecast-days {
+  font-weight: bold;
+}
+
+.forecast-temp-max {
+  color: black;
 }
 
 .weather-app {
