@@ -23,7 +23,12 @@ h1 {
 }
 
 .date {
+}
+
+#date {
   text-align: center;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 #time {
