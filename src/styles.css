@@ -10,7 +10,7 @@ h1 {
   font-weight: bold;
 }
 
-#metric {
+.units {
   color: #3c4245;
   font-weight: bold;
   line-height: 5px;
@@ -80,4 +80,14 @@ button {
 
 .code {
   text-align: center;
+}
+
+.weather-temperature .active {
+  color: #3c4245;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
