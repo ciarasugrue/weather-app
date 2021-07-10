@@ -25,6 +25,37 @@ function newDateFormat(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+      <div class="forecast-days">
+        ${day}
+      </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/011/401/original/iconfinder_5729392_cloudy_sunny_weather_cloud_forecast_icon_512px.png?1624456958"
+          width="40"
+          alt="Sun Behind Cloud"
+        />
+        <div class="forecast-temp">
+          <span class="forecast-temp-max">
+            24°
+          </span>
+          <span class="forecast-temp-min"> 
+            16°
+          </span>
+        </div>
+    </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   celsiusTemp = response.data.main.temp;
 
@@ -102,3 +133,5 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+displayForecast();
