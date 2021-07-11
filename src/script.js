@@ -103,13 +103,17 @@ function showTemperature(response) {
   getForecast(response.data.coord);
 }
 
-function searchCity(event) {
-  event.preventDefault();
+function searchCity(city) {
   let apiKey = "eb6eea518ef4b4002fbbf1c966d1b147";
-  let city = document.querySelector("#search-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#search-input");
+  searchCity(cityInputElement.value);
 }
 
 function showPosition(position) {
@@ -145,7 +149,7 @@ function showCelsiusTemp(event) {
 let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchCity);
+form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
@@ -155,3 +159,5 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+searchCity("Montpellier");
