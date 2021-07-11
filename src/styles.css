@@ -1,7 +1,32 @@
+.weather-app {
+  background: radial-gradient(
+    circle at 3.1% 8.2%,
+    rgb(248, 250, 107) 0%,
+    rgb(238, 148, 148) 98.2%
+  );
+  border: 1px solid #d9dad7;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  padding: 15px;
+  margin: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.weather-temperature .active {
+  color: #3c4245;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
 h1 {
   color: #3c4245;
-  margin-top: 20px;
   margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 #temp {
@@ -27,49 +52,45 @@ h1 {
 }
 
 #description {
+  color: #3c4245;
+  font-weight: 600;
   text-transform: capitalize;
-  font-weight: 600;
-  color: #3c4245;
-}
-
-.date {
-  text-align: center;
-  font-weight: 600;
-  font-size: 12px;
-  color: #3c4245;
 }
 
 #time {
-  text-align: center;
   font-size: 25px;
+  text-align: center;
+}
+
+.date {
+  color: #3c4245;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .search-box {
-  border-radius: 10px;
   border: 1px solid #d9dad7;
-  padding: 5px 20px 5px 10px;
+  border-radius: 10px;
   margin-top: 10px;
-}
-
-span {
-  font-weight: bold;
-  color: #3c4245;
+  padding: 5px 20px 5px 10px;
 }
 
 button {
-  margin-top: 5px;
   display: inline;
+  margin-top: 5px;
 }
 
 .conditions {
   color: #3a4750;
+  font-weight: bold;
   margin-top: 5px;
 }
 
 .forecast {
+  color: #3c4245;
   margin-top: 30px;
   text-align: center;
-  color: #3c4245;
 }
 
 .forecast-days {
@@ -80,32 +101,7 @@ button {
   color: black;
 }
 
-.weather-app {
-  background: radial-gradient(
-    circle at 3.1% 8.2%,
-    rgb(248, 250, 107) 0%,
-    rgb(238, 148, 148) 98.2%
-  );
-  border: 1px solid #d9dad7;
-  border-radius: 10px;
-  font-family: "Manrope", sans-serif;
-  padding: 15px;
-  margin: 20px;
-  max-width: 600px;
-  margin: auto;
-}
-
 .code {
-  text-align: center;
   margin-top: 5px;
-}
-
-.weather-temperature .active {
-  color: #3c4245;
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
+  text-align: center;
 }

@@ -19,17 +19,21 @@
       <div class="weather-app">
         <h1 id="city"></h1>
         <div class="weather-temperature">
-          <img src="" alt="" width="100" id="icon" />
+          <div class="clearfix">
+          <img src="" alt=""  width="100" id="icon" class="float-left"/>
           <span id="temp"></span>
-          <span class="units"
+          <span class="units float-left"
             ><a href="#" id="celsius-link" class="active">°C </a> |
             <a href="#" id="fahrenheit-link">°F</a>
           </span>
+          </div>
         </div>
 
         <div id="description"></div>
+      </br>
         <div id="time"></div>
         <div class="date">Last updated: <span id="date"></span></div>
+      </br> 
 
         <form id="search-form">
           <input
@@ -39,6 +43,7 @@
             id="search-input"
           />
         </form>
+
         <button
           type="button"
           class="btn btn-secondary"
@@ -47,6 +52,7 @@
           Current Location
         </button>
         <br />
+
         <div class="conditions">
           <span>
             <img
