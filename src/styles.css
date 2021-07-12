@@ -84,7 +84,7 @@ button {
 }
 
 .conditions {
-  color: #3a4750;
+  color: #3c4245;
   font-weight: bold;
   margin-top: 5px;
 }
@@ -104,6 +104,16 @@ button {
 }
 
 .code {
+  font-size: 13px;
   margin-top: 5px;
   text-align: center;
+}
+
+.code a {
+  text-decoration: none;
+  color: black;
+}
+
+.code a:hover {
+  text-decoration: underline;
 }
